@@ -1,0 +1,89 @@
+/* Reset default browser styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif; /* Set font-family to Arial */
+    background-color: #bfbfc7; /* Set background color to black */
+}
+
+
+/* Splash screen container */
+.splash-screen {
+    position: relative;
+    width: 100%; /* Set the width to 100% of the viewport */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    overflow: hidden; /* Hide any overflow content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styles */
+.splash-screen img {
+    min-width: 100%; /* Ensure the image covers the entire width of the container */
+    min-height: 100%; /* Ensure the image covers the entire height of the container */
+    width: auto; /* Allow the image width to adjust proportionally */
+    height: auto; /* Allow the image height to adjust proportionally */
+    position: absolute; /* Position the image absolutely within the container */
+    top: 0; /* Align the image to the top of the container */
+    left: 0; /* Align the image to the left of the container */
+    opacity: 0; /* Initially hide the image */
+    animation: fade-in 5s forwards; /* Apply the fade-in animation */
+    animation-delay: 0.5s; /* Delay animation for 0.5 seconds */
+}
+
+/* Overlay text styles */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Heading styles */
+.overlay-text h1 {
+    font-size: 5.5rem; /* Increase font size by 1.5x */
+    color: #5db4fb; /* Set text color to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+    margin-bottom: 30px; /* Increase margin bottom */
+    opacity: 0; /* Initially hide the text */
+    animation: fade-in 8s forwards; /* Apply the fade-in animation */
+    animation-delay: 0.5s; 
+}
+
+/* Paragraph styles */
+.overlay-text p {
+    font-size: 2.5rem; /* Increase font size by 1.5x */
+    color: #fff; /* Set text color to white */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+    margin-bottom: 22.5px; /* Increase margin bottom */
+}
+
+/* List styles */
+.overlay-text ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.overlay-text li {
+    font-size: 1.5rem; /* Increase font size by 1.5x */
+    color: #fff; /* Set text color to white */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+    margin-bottom: 15px; /* Increase margin bottom */
+}
+
+/* Fade-in animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Energy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: rgb(11, 114, 162);
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .topic {
+            padding: 40px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .topic:nth-child(even) {
+            background-color: #1473c0;
+            color: white;
+        }
+
+        .topic:nth-child(odd) {
+            background-color: white;
+            color: navy;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-right: 20px; /* Add margin to separate image from text */
+        }
+
+        .text {
+            flex: 1; /* Take remaining space */
+        }
+
+        .scrollable {
+            max-height: 400px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-decoration: underline;
+        }
+
+        .bullet-point {
+            margin-left: 20px;
+        }
+
+        .reference {
+            font-size: 0.8em;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#solar">Solar Energy</a>
+        <a href="#wind">Wind Energy</a>
+        <a href="#hydro">Hydroelectric Power</a>
+        <a href="#biomass">Biomass Energy</a>
+    </div>
+
+    <div id="solar" class="topic">
+        <img src="Content/Solar.png" alt="Solar Panels">
+        <div class="text">
+            <h2>Solar Energy</h2>
+            <div class="scrollable">
+                <p class="subtitle">How does solar power function?</p>
+                <ul class="bullet-point">
+                    <li>Solar power operates by transforming energy from the sun into usable power. It offers two primary forms of energy – electricity and heat.</li>
+                </ul>
+                <p class="subtitle">Is solar power environmentally friendly?</p>
+                <ul class="bullet-point">
+                    <li>Solar power stands as a renewable and boundless energy source that generates no detrimental greenhouse gas emissions. As long as the sun continues to shine, solar energy will be available for use.</li>
+                </ul>
+                <p class="subtitle">When was solar power discovered?</p>
+                <ul class="bullet-point">
+                    <li>In 1954, the foundational technology of photovoltaics advanced significantly when Daryl Chapin, Calvin Fuller, and Gerald Pearson developed the silicon PV cell at Bell Labs.</li>
+                </ul>
+                <p class="reference">Reference: <a href="https://www.nationalgrid.com/stories/energy-explained/how-does-solar-power-work">National Grid - How does solar power work?</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="wind" class="topic">
+        <img src="Content/Windturbine.png" alt="Wind Turbines">
+        <div class="text">
+            <h2>Wind Energy</h2>
+            <div class="scrollable">
+                <p class="subtitle">How does wind power work?</p>
+                <ul class="bullet-point">
+                    <li>Wind power converts the kinetic energy of air in motion into electricity by rotating rotor blades in modern wind turbines.</li>
+                </ul>
+                <p class="subtitle">Global wind energy growth</p>
+                <ul class="bullet-point">
+                    <li>Since 2000, wind power capacity has surged, driven by R&D, supportive policies, and declining costs, with global installed capacity jumping from 7.5 GW in 1997 to approximately 733 GW by 2018.</li>
+                </ul>
+                <p class="subtitle">Evolution of wind technology</p>
+                <ul class="bullet-point">
+                    <li>Wind turbine capacity has increased over time, with modern turbines boasting capacities of 3-4 MW onshore and 8-12 MW offshore, harnessing the wind's power more efficiently.</li>
+                </ul>
+                <p class="reference">Reference: <a href="https://www.irena.org/Energy-Transition/Technology/Wind-energy">IRENA - Wind Energy</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="hydro" class="topic">
+        <img src="Content/Hydro.png" alt="Hydroelectric Power Plant">
+        <div class="text">
+            <h2>Hydroelectric Power</h2>
+            <div class="scrollable">
+                <p class="subtitle">How does hydroelectric energy work?</p>
+                <ul class="bullet-point">
+                    <li>Hydroelectric energy harnesses the force of moving water, like water flowing over a waterfall, to generate electricity. This method has been used for centuries.</li>
+                </ul>
+                <p class="subtitle">Types of Hydroelectric Energy Plants</p>
+                <ul class="bullet-point">
+                    <li><strong>Impoundment Facilities:</strong> Utilize dams to control water flow from a reservoir, releasing water to flow through turbines.</li>
+                    <li><strong>Diversion Facilities:</strong> Channel river water toward turbines through canals, bypassing the need for dams.</li>
+                    <li><strong>Pumped-Storage Facilities:</strong> Store surplus energy from sources like solar and wind by pumping water uphill to a higher reservoir for future electricity generation.</li>
+                </ul>
+                <p class="subtitle">Global Usage of Hydroelectric Energy</p>
+                <ul class="bullet-point">
+                    <li>Hydroelectricity is the most common renewable electricity source globally, with China leading in production, followed by the United States, Brazil, and others. About 71% of renewable electricity worldwide comes from hydropower.</li>
+                </ul>
+                <p class="reference">Reference: <a href="https://education.nationalgeographic.org/resource/hydroelectric-energy/">National Geographic - Hydroelectric Energy</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="biomass" class="topic">
+        <img src="Content/biomass.png" alt="Biomass Energy">
+        <div class="text">
+            <h2>Biomass Energy</h2>
+            <div class="scrollable">
+                <p class="subtitle">What is biomass?</p>
+                <ul class="bullet-point">
+                    <li>Biomass is renewable organic material derived from plants and animals, containing stored chemical energy from the sun.</li>
+                </ul>
+                <p class="subtitle">Usage of biomass</p>
+                <ul class="bullet-point">
+                    <li>Biomass is utilized for heating, electricity generation, and as a transportation fuel. It's particularly vital in developing countries for cooking and heating.</li>
+                </ul>
+                <p class="subtitle">Conversion methods</p>
+                <ul class="bullet-point">
+                    <li>Biomass can be converted to energy through direct combustion, thermochemical conversion, chemical conversion, and biological conversion processes.</li>
+                </ul>
+
+                <p class="reference">Reference: <a href="https://www.eia.gov/energyexplained/biomass/#:~:text=Biomass%20is%20renewable%20organic%20material,gaseous%20fuels%20through%20various%20processes">EIA - Biomass Energy</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

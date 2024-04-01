@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="Shop.css"> <!-- Link to your shop styles -->
+</head>
+<body>
+    
+    <div id="background-img"></div> <!-- Background image container -->
+    <header>
+        <h1>Product Showcase</h1>
+        <div class="product-container">
+            <!-- Product 1: Mini Solar Panel -->
+            <div class="product">
+                <img src="Products/SolarpanelProduct.png" alt="Mini Solar Panel">
+                <h2>Mini Solar Panel</h2>
+                <p class="price">$10.00</p>
+                <div class="add-to-cart">
+                    <input type="number" value="1" min="1" max="5">
+                    <button>Add to Basket</button>
+                </div>
+            </div>
+            <!-- Product 2: Mini Windmill -->
+            <div class="product">
+                <img src="Products/WindmillProduct.png" alt="Mini Windmill">
+                <h2>Mini Windmill</h2>
+                <p class="price">$15.00</p>
+                <div class="add-to-cart">
+                    <input type="number" value="1" min="1" max="5">
+                    <button>Add to Basket</button>
+                </div>
+            </div>
+            <!-- Product 3: Hydropower Kids Set -->
+            <div class="product">
+                <img src="Products/HydropowerProduct.png" alt="Hydropower Kids Set">
+                <h2>Hydropower Set</h2>
+                <p class="price">$20.00</p>
+                <div class="add-to-cart">
+                    <input type="number" value="1" min="1" max="5">
+                    <button>Add to Basket</button>
+                </div>
+            </div>
+            <!-- Product 4: All About Energy Book -->
+            <div class="product">
+                <img src="Products/EnergybookProduct.png" alt="All About Energy Book">
+                <h2>All About Energy Book</h2>
+                <p class="price">$12.00</p>
+                <div class="add-to-cart">
+                    <input type="number" value="1" min="1" max="5">
+                    <button>Add to Basket</button>
+                </div>
+            </div>
+            <!-- Product 5: Solar-Powered LED Garden Lights -->
+            <div class="product">
+                <img src="Products/SolarLightsProduct.png" alt="Solar-Powered LED Garden Lights">
+                <h2>Solar Garden Lights</h2>
+                <p class="price">$25.00</p>
+                <div class="add-to-cart">
+                    <input type="number" value="1" min="1" max="5">
+                    <button>Add to Basket</button>
+                </div>
+            </div>
+            <!-- Product 6: DIY Solar Car Kit -->
+            <div class="product">
+                <img src="Products/DiysolarcarProduct.png" alt="DIY Solar Car Kit">
+                <h2>DIY Solar Car Kit</h2>
+                <p class="price">$30.00</p>
+                <div class="add-to-cart">
+                    <input type="number" value="1" min="1" max="5">
+                    <button>Add to Basket</button>
+                </div>
+            </div>
+            <!-- Product 7: Eco-friendly reusable water bottles -->
+            <div class="product">
+                <img src="Products/BottleProduct.png" alt="Eco-friendly reusable water bottles">
+                <h2>Reusable Water Bottle</h2>
+                <p class="price">$10.00</p>
+                <div class="add-to-cart">
+                    <input type="number" value="1" min="1" max="5">
+                    <button>Add to Basket</button>
+                </div>
+            </div>
+            <!-- Product 8: Solar-powered Power Bank -->
+            <div class="product">
+                <img src="Products/PowerbankProduct.png" alt="Solar-powered Power Bank">
+                <h2>Solar-powered Power Bank</h2>
+                <p class="price">$15.00</p>
+                <div class="add-to-cart">
+                    <input type="number" value="1" min="1" max="5">
+                    <button>Add to Basket</button>
+                </div>
+            </div>
+            <!-- Product 9: Sustainable bamboo kitchen utensils -->
+            <div class="product">
+                <img src="Products/UtensilsProduct.png" alt="Sustainable bamboo kitchen utensils">
+                <h2>Bamboo Utensils</h2>
+                <p class="price">$20.00</p>
+                <div class="add-to-cart">
+                    <input type="number" value="1" min="1" max="5">
+                    <button>Add to Basket</button>
+                </div>
+            </div>
+            <!-- Product 10: Energy-saving power strips with surge protection -->
+            <div class="product">
+                <img src="Products/PowerstripProduct.png" alt="Energy-saving power strips with surge protection">
+                <h2><h2>Energy-saving Power Strip</h2></h2>
+                <p class="price">$25.00</p>
+                <div class="add-to-cart">
+                    <input type="number" value="1" min="1" max="5">
+                    <button>Add to Basket</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside class="order-summary">
+        <h2>Order Summary</h2>
+        <ul id="order-list">
+            <!-- Order items will be displayed here -->
+        </ul>
+        <div class="total">
+            <p>Total: <span id="total-price">$0.00</span></p>
+        </div>
+        <button id="clear-basket" onclick="clearBasket()">Clear Basket</button>
+        <form id="checkout-form">
+            <input type="text" placeholder="Name" required><br>
+            <input type="email" placeholder="Email" required><br>
+            <label><input type="checkbox"> Express Delivery</label><br>
+            <button type="submit">Proceed to Checkout</button>
+        </form>
+    </aside>
+
+    <script src="Shop.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

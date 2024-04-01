@@ -1,0 +1,212 @@
+/* Shop.css */
+
+.product h2,
+.product p {
+    color: white; /* Set text color to white */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add shadow effect */
+}
+
+.product img {
+    width: 250px;
+    height: 300px;
+}
+
+/* Shop.css */
+
+#background-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/Nature.gif");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 0; /* Adjusted z-index */
+}
+
+
+.product-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background with 50% opacity */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Five columns */
+    gap: 20px; /* Gap between products */
+    justify-content: flex-start; /* Shift products to the left */
+    padding-right: 400px; /* Adjusted padding to create space for the wider order summary */
+}
+
+/* Shop.css */
+
+.product {
+    width: 250px; /* Fixed width for the product boxes */
+    height: 400px; /* Fixed height for the product boxes */
+    margin: 10px; /* Set margin between product containers */
+    padding: 10px; /* Adjusted padding for better spacing */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px; /* Retained border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.product img {
+    width: 80%; /* Adjusted image width to fit within the product container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product h2,
+.product p {
+    color: white; /* Set text color to white */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add shadow effect */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Truncate text with an ellipsis */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Adjust alignment of the input and button */
+}
+
+.add-to-cart input[type="number"] {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.order-summary {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px; /* Increased width for the order summary */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners */
+    height: calc(100vh - 40px); /* Adjusted height to fit contents within viewport height */
+    overflow-y: auto; /* Adding vertical scroll if content overflows */
+    text-align: center; /* Center align text */
+}
+
+
+.order-summary h2 {
+    margin-bottom: 20px; /* Increased margin bottom for better separation */
+    color: white; /* Set text color to white */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add shadow effect */
+    font-size: 32px; /* Increased font size */
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-item .remove {
+    color: red;
+    cursor: pointer;
+}
+
+
+.total {
+    text-align: right;
+    margin-top: 20px; /* Increased margin top for better spacing */
+    font-size: 24px; /* Increased font size */
+    color: white; /* Set text color to white */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add shadow effect */
+}
+
+/* Increase the font size, padding, and add spacing for the "Clear Basket" button */
+#clear-basket {
+    font-size: 18px;
+    padding: 12px 24px;
+    margin-bottom: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Increase the font size and add spacing for the name and email inputs */
+#checkout-form input[type="text"],
+#checkout-form input[type="email"] {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Increase the font size, add spacing, and retain styling colors for the express delivery label */
+#checkout-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Increase the font size, padding, and add spacing for the "Proceed to Checkout" button */
+#checkout-form button {
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Shop.css */
+
+/* Add this CSS to make the text of the orders white */
+.order-summary #order-list li {
+    color: white;
+}
+
+header h1 {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.product-container {
+    border: 1px solid white; /* Add a white border */
+}
+
+/* Apply styles for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    }
+    
+    .product {
+        width: 100%; /* Full width for products on smaller screens */
+    }
+}
+
+/* Apply styles for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .product-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column for even smaller screens */
+    }
+}

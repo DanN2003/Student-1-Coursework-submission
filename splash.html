@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your styles.css file -->
+    <style>
+        /* Add custom CSS here for special letter styling */
+        .white {
+            color: rgb(255, 255, 255); /* Set color to white */
+        }
+
+        /* Navbar styles */
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="shop.html">Shop</a></li> <!-- Set href attribute to Shop.html -->
+            <li><a href="profile.html">User Profile</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="content_ST1.html">Content</a></li>
+            <li><a href="pageEditor_ST1.html">Editor</a></li>
+        </ul>
+    </nav>
+
+    <div class="splash-screen">
+        <img id="background-img" src="images/Wonderworldmotion.gif" alt="Wind Turbine Image" onload="fadeInH1()">
+        <div class="overlay-text">
+            <h1>E<span class="white">C</span><span class="white">O</span> S<span class="white">O</span>LUTI<span class="white">O</span>NS</h1>
+            <p>Empowering Through Affordable and Clean Energy</p>
+            <ul>
+                <li> </li>
+                <li id="redirect-message">Danyal, Julia, Griselle, Yasmin</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--<script>
+        function fadeInH1() {
+            document.querySelector('.overlay-text h1').style.animation = 'fade-in 8s forwards';
+            setTimeout(redirect, 5000); // Redirect after 5 seconds
+            showRedirectMessage(5); // Start showing redirect message
+        }
+
+        function redirect() {
+            window.location.href = "home.html"; // Replace "home.html" with the actual filename of your home page
+        }
+
+        function showRedirectMessage(seconds) {
+            const messageElement = document.getElementById('redirect-message');
+            let counter = seconds;
+            const intervalId = setInterval(function() {
+                messageElement.textContent = `Redirecting in ${counter} seconds...`;
+                counter--;
+                if (counter < 0) {
+                    clearInterval(intervalId);
+                }
+            }, 1000);
+        }
+    </script>
+
+</body>
+</html>
